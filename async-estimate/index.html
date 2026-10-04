@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Async Estimate for Jira · Docs</title><link rel="stylesheet" href="../style.css"></head><body>
+<header><a href="../index.html">Gladmill</a><nav><a href="../repo-docs/index.html">Repo Docs</a><a href="../async-estimate/index.html">Async Estimate</a><a href="../support.html">Support</a></nav></header>
+<main>
+<h1>Async Estimate for Jira</h1>
+<p>Team members estimate an issue on their own time. Votes stay hidden until someone reveals them; the team then talks only about the issues where votes disagree.</p>
+<h2>Vote on an issue</h2>
+<p>Open an issue and find the <strong>Async Estimate</strong> panel. Pick a card (Fibonacci or T-shirt sizes). You see who has voted, never their values, until someone clicks <strong>Reveal</strong>.</p>
+<h2>After reveal</h2>
+<ul>
+<li><strong>Agreement</strong> means a spread of at most one step on the scale, with nobody voting "?".</li>
+<li>The suggestion is the upper median of the known votes. <strong>Set story points</strong> writes it to Jira's story points field, using your own Jira permissions. This works for Fibonacci rounds; T-shirt sizes can't be written to the numeric field, so those rounds have no button.</li>
+<li><strong>New round</strong> clears the votes and starts again.</li>
+</ul>
+<h2>Estimation board</h2>
+<p>Each project gets an <strong>Estimation board</strong> page listing issues being estimated. <strong>Reveal all</strong> reveals every open round; revealed issues are sorted by disagreement so refinement starts with the ones that need discussion. You only see issues you can view in Jira.</p>
+<h2>Troubleshooting</h2>
+<ul>
+<li><strong>"Set story points" fails</strong>: you need edit permission on the issue, and the story points field must be on the issue's edit screen.</li>
+<li><strong>"This Jira site has no Story Points field"</strong>: add a story points field to the site (Jira admin), or estimate without writing back.</li>
+<li><strong>"licence isn't active"</strong>: a site admin checks the app under <em>Manage apps</em>.</li>
+</ul>
+<p>Still stuck? <a href="../support.html">Contact support</a>.</p>
+</main>
+<footer>© 2026 Gladmill · <a href="mailto:support@gladmill.com">support@gladmill.com</a></footer>
+</body></html>

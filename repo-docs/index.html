@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Repo Docs for Confluence · Docs</title><link rel="stylesheet" href="../style.css"></head><body>
+<header><a href="../index.html">Gladmill</a><nav><a href="../repo-docs/index.html">Repo Docs</a><a href="../async-estimate/index.html">Async Estimate</a><a href="../support.html">Support</a></nav></header>
+<main>
+<h1>Repo Docs for Confluence</h1>
+<p>Two macros that render files from Git repositories in Confluence Cloud: <strong>OpenAPI Docs</strong> (OpenAPI 3.x and Swagger 2.0 specs) and <strong>Markdown from Git</strong> (Markdown with Mermaid diagrams and repo images). Files are fetched by the app's backend on every page view, so pages follow the branch or tag you choose.</p>
+<h2>1. Add a read-only token (site admins, private repos only)</h2>
+<p>Go to <em>Settings → OpenAPI Docs</em> and save one token per Git host. The token is stored in Atlassian's encrypted app storage and is never shown to page viewers or editors.</p>
+<ul>
+<li><strong>GitHub:</strong> a fine-grained personal access token limited to the repos that hold your docs, with <em>Contents: Read-only</em>.</li>
+<li><strong>Bitbucket Cloud:</strong> a repository or workspace access token with <em>Repositories: Read</em>.</li>
+<li><strong>GitLab.com:</strong> a project or group access token with <code>read_repository</code> (or <code>read_api</code>).</li>
+</ul>
+<p>Use tokens that can only read the repositories you want shown: anyone who can edit a page can display any OpenAPI or Markdown file those tokens can read.</p>
+<h2>2. Insert a macro</h2>
+<p>Edit a page, type <code>/OpenAPI Docs</code> or <code>/Markdown from Git</code>, then choose the provider, repository (<code>owner/repo</code>, <code>workspace/repo</code> or <code>group/project</code>), file path and branch, tag or commit.</p>
+<h2>What gets rendered</h2>
+<ul>
+<li><strong>OpenAPI Docs:</strong> <code>.yaml</code>, <code>.yml</code> or <code>.json</code> files that are OpenAPI or Swagger documents, up to 2 MB. Other YAML/JSON files are refused.</li>
+<li><strong>Markdown from Git:</strong> <code>.md</code> or <code>.markdown</code>, up to 1 MB. Mermaid code blocks become diagrams; relative images load from the same repo (up to 1 MB each); relative links open the file on your Git host. Badges from img.shields.io and badgen.net display; other external images are blocked by Atlassian's content policy.</li>
+</ul>
+<h2>Troubleshooting</h2>
+<ul>
+<li><strong>"rejected the token"</strong>: the token expired or was revoked; an admin saves a new one.</li>
+<li><strong>"can't read this repository"</strong>: the token lacks access to that repo, or the host is rate-limiting.</li>
+<li><strong>"couldn't find that file"</strong>: check repository, path and branch, and that the token can see the repo.</li>
+<li><strong>"licence isn't active"</strong>: a site admin checks the app under <em>Manage apps</em>.</li>
+</ul>
+<p>Still stuck? <a href="../support.html">Contact support</a>.</p>
+</main>
+<footer>© 2026 Gladmill · <a href="mailto:support@gladmill.com">support@gladmill.com</a></footer>
+</body></html>

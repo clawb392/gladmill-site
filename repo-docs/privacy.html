@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Repo Docs for Confluence · Privacy</title><link rel="stylesheet" href="../style.css"></head><body>
+<header><a href="../index.html">Gladmill</a><nav><a href="../repo-docs/index.html">Repo Docs</a><a href="../async-estimate/index.html">Async Estimate</a><a href="../support.html">Support</a></nav></header>
+<main>
+<h1>Privacy policy: Repo Docs for Confluence</h1>
+<p class="muted">Last updated 2026-10-04</p>
+<p>Repo Docs for Confluence ("the app") is provided by Gladmill and runs on Atlassian Forge, Atlassian's cloud platform for apps.</p>
+<h2>What the app stores</h2>
+<ul>
+<li>Macro settings you enter (Git provider, repository, branch and file path), saved in your Confluence page by Confluence.</li>
+<li>Access tokens your site admin adds, in Atlassian's encrypted Forge app storage for your site.</li>
+</ul>
+<p>The app does not store file contents, page contents or personal data, and uses no analytics, cookies or tracking.</p>
+<h2>Where data goes</h2>
+<p>To show a file, the app's backend sends the repository, file path, branch or tag, and your site's token to the Git host you chose (GitHub, Bitbucket or GitLab.com) and returns the file to the page. Badge images from img.shields.io or badgen.net referenced in a Markdown file are loaded by the viewer's browser. Apart from these, nothing is sent anywhere else.</p>
+<h2>Logs</h2>
+<p>When a fetch fails, the app logs the provider, the HTTP status, whether a token was set and, for GitHub, its request id and the permission the request needed, for support. Logs never contain tokens or file contents and are kept by Atlassian's Forge logging.</p>
+<h2>Deletion</h2>
+<p>Admins can remove a token at any time in the app's settings. When the app is uninstalled, Atlassian soft-deletes its stored tokens and permanently deletes them after Atlassian's standard retention period; if you reinstall within 21 days, Atlassian can restore them on request. Macro settings stay in your pages until you remove the macros.</p>
+<h2>Contact</h2>
+<p><a href="mailto:support@gladmill.com">support@gladmill.com</a></p>
+</main>
+<footer>© 2026 Gladmill · <a href="mailto:support@gladmill.com">support@gladmill.com</a></footer>
+</body></html>
