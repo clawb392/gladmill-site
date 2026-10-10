@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Hotpaths for AutoCAD · Gladmill</title>
+<meta name="description" content="Record a manual AutoCAD test once. Hotpaths writes the test script with screenshots and dialog values, and replays it with one click. $99.">
+<link rel="stylesheet" href="../style.css"></head><body>
+<header><a href="../index.html">Gladmill</a><nav><a href="../hotpaths/index.html">Hotpaths</a><a href="../repo-docs/index.html">Repo Docs</a><a href="../async-estimate/index.html">Async Estimate</a><a href="../support.html">Support</a><a class="nav-buy" href="#buy">Buy $99</a></nav></header>
+<main>
+
+<section class="hero">
+<p class="eyebrow">Hotpaths for AutoCAD</p>
+<h1>Test your AutoCAD tools once. Rerun the test with one click.</h1>
+<p class="lead">Do the test by hand while Hotpaths records it. You get a step-by-step test script with screenshots and every dialog value you changed. Click <strong>Run test</strong> later and Hotpaths does it all again, then tells you PASS or FAIL.</p>
+<div class="btns"><a class="btn" href="#buy">Buy Hotpaths for $99</a><a class="btn ghost" href="#demo">See the demo</a></div>
+</section>
+
+<ul class="facts">
+<li><strong>Real output, not a mockup</strong>Every picture on this page came from a Hotpaths recording.</li>
+<li><strong>Tested on AutoCAD Electrical 2026</strong>Built for AutoCAD 2026 on Windows.</li>
+<li><strong>Stays on your PC</strong>No account and no cloud. Recordings and scripts are plain files you own.</li>
+<li><strong>Word, Excel and Markdown</strong>Give testers the format they already use.</li>
+</ul>
+
+<h2>Who it's for</h2>
+<ul class="check">
+<li>CAD managers who check custom commands, ribbons and dialogs after every update.</li>
+<li>Developers of AutoCAD plugins who need a regression test without writing test code.</li>
+<li>Teams that hand manual test scripts to testers, and are tired of rewriting them.</li>
+</ul>
+
+<h2 id="demo">Demo: a real test, start to finish</h2>
+<p>This test draws a line, then opens a <strong>Draw grid</strong> dialog, changes two values and picks a point. Here is what Hotpaths did with it.</p>
+
+<ol class="steps">
+<li>
+<h3>Record: click Start and do your test</h3>
+<p>Hotpaths adds a ribbon tab. Click <strong>Start</strong>, do the work as usual, add a <strong>Checkpoint</strong> for anything worth checking, then click <strong>Stop</strong>.</p>
+<img class="shot" src="img/ribbon.png" width="406" height="130" alt="The Hotpaths ribbon tab in AutoCAD: Start, Checkpoint, Stop, Run test, Step through">
+</li>
+<li>
+<h3>Hotpaths sees what you changed in each dialog</h3>
+<p>It takes a picture of the dialog as it opened and again before you pressed OK, and writes down only the values you changed.</p>
+<div class="pair">
+<figure><img class="shot" src="img/dialog-before.png" width="251" height="203" alt="Draw grid dialog as it opened: Rows 3, Columns 4, Spacing 10.00"><figcaption>Before</figcaption></figure>
+<figure><img class="shot" src="img/dialog-after.png" width="251" height="203" alt="Draw grid dialog with Columns 5 and Spacing 20"><figcaption>After</figcaption></figure>
+</div>
+<p>In the script this becomes:</p>
+<div class="card small">A dialog opens: <strong>Draw grid</strong>. Make these changes, then confirm:<ul><li>Set <strong>Columns</strong> to <code>5</code> (was <code>4</code>)</li><li>Set <strong>Spacing</strong> to <code>20</code> (was <code>10.00</code>)</li></ul></div>
+</li>
+<li>
+<h3>You get a test script anyone can follow</h3>
+<p>When you click Stop, Hotpaths writes <strong>Test steps</strong>: numbered steps, the ribbon button or command for each, every point picked, and a screenshot of each step. Optionally also as Word and Excel files, with a PASS/FAIL column for testers.</p>
+<div class="btns"><a class="btn ghost" href="sample/index.html">Open the real test script</a><a class="btn ghost" href="sample/Test%20steps.docx">Word sample (.docx)</a><a class="btn ghost" href="sample/Test%20steps.xlsx">Excel sample (.xlsx)</a></div>
+</li>
+<li>
+<h3>Run it again with one click</h3>
+<p>Click <strong>Run test</strong> and pick the test. Hotpaths opens a new drawing, clicks the same ribbon buttons, types the same commands and points, fills each dialog with the recorded values and presses OK. At the end it checks every checkpoint and shows the verdict.</p>
+<div class="pair">
+<figure><img class="shot" src="img/pass.png" width="410" height="183" alt="AutoCAD message: Hotpath test: PASS, Checkpoint 1 5x4 grid: PASS"><figcaption>The verdict from a run of a similar grid test with one checkpoint. Every run is saved with its date and verdict.</figcaption></figure>
+</div>
+</li>
+</ol>
+
+<div class="btns"><a class="btn" href="#buy">Get Hotpaths for $99</a></div>
+
+<h2>By hand vs. with Hotpaths</h2>
+<div class="table-scroll"><table class="compare">
+<tr><th></th><th>Writing test scripts by hand</th><th>Hotpaths</th></tr>
+<tr><td>Writing the script</td><td>Type every step, take and paste every screenshot</td><td>Written for you when you click Stop</td></tr>
+<tr><td>Dialog values</td><td>Easy to forget one</td><td>Every changed value, with before and after pictures</td></tr>
+<tr><td>Retesting after a change</td><td>Someone clicks through it all again</td><td>One click, with a PASS or FAIL verdict</td></tr>
+<tr><td>Formats</td><td>Whatever you had time for</td><td>Markdown, Word and Excel from the same recording</td></tr>
+<tr><td>History</td><td>None</td><td>Every run saved with its date and verdict</td></tr>
+</table></div>
+
+<section class="buybox" id="buy">
+<p class="eyebrow">Hotpaths for AutoCAD</p>
+<div class="amount">$99</div>
+<p class="muted">One-time payment, per user.</p>
+<ul class="check">
+<li>The Hotpaths plugin for AutoCAD 2026 (Windows), installed as a normal AutoCAD app bundle</li>
+<li>Record, replay with automatic dialog filling, and step-through mode</li>
+<li>Test scripts in Markdown, plus Word and Excel export</li>
+<li>A test browser in AutoCAD: open any test's script, screenshots and results, or run it</li>
+<li>Email support from the developer</li>
+</ul>
+<div class="btns"><a class="btn" href="mailto:support@gladmill.com?subject=Buy%3A%20Hotpaths%20for%20AutoCAD&amp;body=Hi%20Gladmill%2C%0A%0AI%27d%20like%20to%20buy%20Hotpaths%20for%20AutoCAD%20%28%2499%20one-time%2C%20per%20user%29.%0A%0AName%3A%0ACompany%3A%0ANumber%20of%20users%3A%0AAutoCAD%20product%20and%20version%3A%0A%0AQuestions%3A%0A">Buy Hotpaths for $99</a></div>
+<p class="small muted">The button opens an email to support@gladmill.com. Send it and we reply with payment details and the download. Not sure it fits your setup? <a href="mailto:support@gladmill.com?subject=Hotpaths%20question">Ask first</a>.</p>
+</section>
+
+<h2>Questions</h2>
+<details><summary>Which AutoCAD versions does it work with?</summary><p>AutoCAD 2026 on Windows. It is tested on AutoCAD Electrical 2026. Other AutoCAD 2026 products load the same plugin; if you use one, tell us before you buy and we'll confirm.</p></details>
+<details><summary>Does it work with our own commands, ribbons and dialogs?</summary><p>Yes, that's what it is for. It records ribbon clicks, typed commands, prompts and points from any command. Reading and filling dialog values is tested on standard Windows and WinForms dialogs; WPF dialogs are read through UI Automation. If a dialog can't be filled, the replay waits and tells you which values to enter.</p></details>
+<details><summary>Does anything leave my PC?</summary><p>No. Hotpaths needs no account or internet connection. Recordings, screenshots, scripts and results are files in your Documents folder.</p></details>
+<details><summary>Can testers without Hotpaths use the scripts?</summary><p>Yes. The test script is a normal Markdown, Word or Excel file with the screenshots. Anyone can follow it by hand.</p></details>
+<details><summary>How do I pay?</summary><p>Click the buy button and send the email. We reply with payment details and the download link.</p></details>
+
+</main>
+<div class="stickybuy"><span><strong>Hotpaths for AutoCAD</strong> · $99</span><a class="btn" href="mailto:support@gladmill.com?subject=Buy%3A%20Hotpaths%20for%20AutoCAD&amp;body=Hi%20Gladmill%2C%0A%0AI%27d%20like%20to%20buy%20Hotpaths%20for%20AutoCAD%20%28%2499%20one-time%2C%20per%20user%29.%0A%0AName%3A%0ACompany%3A%0ANumber%20of%20users%3A%0AAutoCAD%20product%20and%20version%3A%0A%0AQuestions%3A%0A">Buy now</a></div>
+<footer>© 2026 Gladmill · <a href="mailto:support@gladmill.com">support@gladmill.com</a><br>AutoCAD is a registered trademark of Autodesk, Inc. Gladmill is not affiliated with or endorsed by Autodesk.</footer>
+</body></html>
