@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Sample test script · Hotpaths · Gladmill</title>
+<meta name="description" content="A real test script written by Hotpaths from a recorded AutoCAD test.">
+<link rel="stylesheet" href="../../style.css"></head><body>
+<header><a href="../../index.html">Gladmill</a><nav><a href="../../hotpaths/index.html">Hotpaths</a><a href="../../repo-docs/index.html">Repo Docs</a><a href="../../async-estimate/index.html">Async Estimate</a><a href="../../support.html">Support</a><a class="nav-buy" href="../../hotpaths/index.html#buy">Buy $99</a></nav></header>
+<main>
+<div class="card small"><strong>This is real Hotpaths output.</strong> Hotpaths wrote this page from a recorded test in AutoCAD Electrical 2026. We only cropped the screenshots for the web. The same recording also gave the <a href="Test%20steps.docx">Word</a> and <a href="Test%20steps.xlsx">Excel</a> versions. <a href="../../hotpaths/index.html#buy">Get Hotpaths for $99</a></div>
+
+<h1>dtest</h1>
+<p>Recorded 2026-10-10, with AutoCAD 25.1.0.0, workspace ACADE &amp; 2D Drafting &amp; Annotation.</p>
+<p><strong>Start with:</strong> a new empty drawing.</p>
+<p>Do the steps in order. A picture under a step shows what the screen looked like when the test was recorded.</p>
+
+<h2>Files in this folder</h2>
+<div class="table-scroll"><table class="compare">
+<tr><th>File</th><th>What it is for</th></tr>
+<tr><td><code>Test steps.md</code></td><td>This page: the steps to follow by hand. It is written again each time the recording is processed, so do not edit it.</td></tr>
+<tr><td><code>recording.jsonl</code></td><td>The recording itself, one event per line. This is what <strong>Run test</strong> replays.</td></tr>
+<tr><td><code>screenshots</code></td><td>Pictures of the screen, named after the step that shows them. <code>not-used</code> holds the ones this page does not show.</td></tr>
+<tr><td><code>results</code></td><td>One file per automatic run, named by date and verdict (<code>2026-10-10 03-15-02 PASS.json</code>). <code>latest.json</code> is a copy of the newest.</td></tr>
+</table></div>
+<p>To run this test automatically: in AutoCAD open the <strong>Hotpaths</strong> tab, click <strong>Run test</strong> and pick <code>recording.jsonl</code> in this folder.</p>
+
+<h2>Steps</h2>
+<ol>
+<li><p>Click <strong>Samples › Draw › Line</strong></p>
+<img class="shot" src="screenshots/step-01-click.png" width="1020" height="610" alt="Click Samples › Draw › Line" loading="lazy">
+<img class="shot" src="screenshots/step-01-command.png" width="1020" height="610" alt="Click Samples › Draw › Line" loading="lazy">
+<ul>
+<li><p>Pick the Start point (recorded at 10.1073, 17.2661)</p><img class="shot" src="screenshots/step-01-pick-1.png" width="1020" height="610" alt="Pick the Start point" loading="lazy"></li>
+<li><p>Pick the End point (recorded at 12.77, 19.9861)</p><img class="shot" src="screenshots/step-01-pick-2.png" width="1020" height="610" alt="Pick the End point" loading="lazy"></li>
+</ul>
+<img class="shot" src="screenshots/step-01-end.png" width="1020" height="610" alt="Click Samples › Draw › Line" loading="lazy">
+</li>
+<li><p>Click <strong>Samples › Dialogs › Grid...</strong></p>
+<img class="shot" src="screenshots/step-02-click.png" width="1020" height="610" alt="Click Samples › Dialogs › Grid..." loading="lazy">
+<img class="shot" src="screenshots/step-02-command.png" width="1020" height="610" alt="Click Samples › Dialogs › Grid..." loading="lazy">
+<ul>
+<li><p>A dialog opens: <strong>Draw grid</strong>. Make these changes, then confirm:</p>
+<p>Before:</p>
+<img class="shot" src="screenshots/step-02-dialog-before.png" width="251" height="203" alt="Draw grid as it opens" loading="lazy">
+<ul><li>Set <strong>Columns</strong> to <code>5</code> (was <code>4</code>)</li><li>Set <strong>Spacing</strong> to <code>20</code> (was <code>10.00</code>)</li></ul>
+<p>After (what it should look like before you press OK):</p>
+<img class="shot" src="screenshots/step-02-dialog-after.png" width="251" height="203" alt="Draw grid with the changes" loading="lazy"></li>
+<li><p>Pick the Lower-left point of the grid (recorded at 17.5037, 16.4974)</p><img class="shot" src="screenshots/step-02-pick-1.png" width="1020" height="610" alt="Pick the Lower-left point of the grid" loading="lazy"></li>
+</ul>
+<img class="shot" src="screenshots/step-02-end.png" width="1020" height="610" alt="Click Samples › Dialogs › Grid..." loading="lazy">
+</li>
+</ol>
+
+<h2>Result</h2>
+<p>This recording has no checkpoints. Write down what you saw: <strong>pass</strong> if the steps ran as described, <strong>fail</strong> otherwise.</p>
+
+<div class="buybox"><p class="eyebrow">Like what you see?</p><p>Hotpaths writes a page like this for every test you record, and reruns the test with one click.</p><div class="btns"><a class="btn" href="mailto:support@gladmill.com?subject=Buy%3A%20Hotpaths%20for%20AutoCAD&amp;body=Hi%20Gladmill%2C%0A%0AI%27d%20like%20to%20buy%20Hotpaths%20for%20AutoCAD%20%28%2499%20one-time%2C%20per%20user%29.%0A%0AName%3A%0ACompany%3A%0ANumber%20of%20users%3A%0AAutoCAD%20product%20and%20version%3A%0A%0AQuestions%3A%0A">Buy Hotpaths for $99</a><a class="btn ghost" href="../../hotpaths/index.html">Back to the demo</a></div></div>
+</main>
+<footer>© 2026 Gladmill · <a href="mailto:support@gladmill.com">support@gladmill.com</a><br>AutoCAD is a registered trademark of Autodesk, Inc. Gladmill is not affiliated with or endorsed by Autodesk.</footer>
+</body></html>
